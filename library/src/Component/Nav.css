@@ -1,0 +1,9 @@
+.fav{
+    margin-right: 60px;
+    margin-top: 7px;
+}
+.fa-heart{
+    position: relative;
+    right: 50px;
+    color: red;
+}
