@@ -1,0 +1,41 @@
+.heading{
+    
+    background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Books/XCM_Manual_1525863_2827385_5264753_1500x300_en_US.jpg');
+    height: 300px;
+    padding-top: 50px;
+}
+
+.const{
+    border: 2px solid rgb(229, 226, 226);
+    margin: 5px;
+
+
+}
+.container{
+   
+    
+   display: flex;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    right: 150px;
+    width: 1200px;
+   
+    
+}
+.const img{
+    /* justify-content: center; */
+    height: 250px;
+    width: 250px;
+}
+.const p{
+    text-align: center;
+    font-size: larger;
+}
+#banner{
+    margin: 15px;
+}
+#vairam{
+    margin-top: 10px;
+    margin-left: 20px;
+}
