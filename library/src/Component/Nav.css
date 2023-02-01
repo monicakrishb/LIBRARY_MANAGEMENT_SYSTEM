@@ -7,3 +7,20 @@
     right: 50px;
     color: red;
 }
+.register,.login,.dashboard,.logout{
+    position: relative;
+    /* top: 70px; */
+}
+.search{
+    position: relative;
+    top: 15px;
+}
+.fa-book{
+    color:white;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.cart{
+    color:white
+}
+
