@@ -15,7 +15,7 @@ const Favorites = () => {
 
   return (
     <div>
-      {/* <Nav/> */}
+      <Nav/>
     <div className='favourites'>
       {favourites.length > 0 ? favourites.map((book) => (
         <div key={book.id} className="book">
