@@ -5,30 +5,30 @@
     padding-top: 50px;
 }
 
-.const{
+.flix{
     border: 2px solid rgb(229, 226, 226);
     margin: 5px;
 
 
 }
-.container{
+.origin{
    
     
    display: flex;
     background-color: white;
     position: relative;
     top: 20px;
-    right: 150px;
+    right: 5px;
     width: 1200px;
    
     
 }
-.const img{
+.flix img{
     /* justify-content: center; */
     height: 250px;
     width: 250px;
 }
-.const p{
+.flix p{
     text-align: center;
     font-size: larger;
 }
