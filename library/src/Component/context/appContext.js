@@ -1,37 +1,37 @@
-import { createContext ,useContext} from "react";
+import { createContext, useContext } from "react";
 import { useState } from "react";
-const AppContext=createContext(null);
+const AppContext = createContext(null);
 
 // we will create a hook that will return context
-export const useAppContext=()=>{
-    const context=useContext(AppContext);
-    if(context===undefined){
+export const useAppContext = () => {
+    const context = useContext(AppContext);
+    if (context === undefined) {
         throw new Error('Appcontext must be within appContextProvider')
     }
     return context;
 }
 
 
-const AppContextProvider=({children})=>{
-    const[favourites,setFavourites]=useState([]);
-    const addToFavourites=(book)=>{
-        const oldFavourites=[...favourites];
+const AppContextProvider = ({ children }) => {
+    const [favourites, setFavourites] = useState([]);
+    const addToFavourites = (book) => {
+        const oldFavourites = [...favourites];
 
 
-        const newFavourites=oldFavourites.concat(book);
+        const newFavourites = oldFavourites.concat(book);
         setFavourites(newFavourites)
 
     };
 
-    const removeFromFavourites=(id)=>{
+    const removeFromFavourites = (id) => {
 
-        const oldFavourites=[...favourites];
-        const newFavourites=oldFavourites.filter((book)=>book.id!==id);
+        const oldFavourites = [...favourites];
+        const newFavourites = oldFavourites.filter((book) => book.id !== id);
         setFavourites(newFavourites);
-        };
-    
-    return(
-        <AppContext.Provider value={{favourites,addToFavourites,removeFromFavourites}}
+    };
+
+    return (
+        <AppContext.Provider value={{ favourites, addToFavourites, removeFromFavourites }}
         >
             {children}
         </AppContext.Provider>
